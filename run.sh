@@ -47,7 +47,6 @@ port_promiscuous=NO
 require_ssl_reuse=NO
 EOF
 
-mkdir /etc/vsftpd
 openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
   -subj "/CN=US" \
   -keyout /etc/ssl/private/vsftpd.pem \
